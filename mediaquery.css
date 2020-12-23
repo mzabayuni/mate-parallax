@@ -1,0 +1,9 @@
+@media (max-width: 1020px) {
+  .main-nav {
+    display: none;
+  }
+  
+  .toggle_button {
+    display: block;
+  }
+}

@@ -1,0 +1,477 @@
+        /*<-------GENERAL SETUP------->*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'roboto';
+  font-size: 100%;
+}
+
+
+/*<-------USABLE STYLE------->*/
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+section {
+  padding: 80px 0;
+}
+
+.grid-container-3-col {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.active {
+  color: #1dd1a1;
+}
+
+.btn {
+  color: #fff;
+  text-decoration: none;
+}
+
+.btn-full {
+  background: #1dd1a1;
+  Border: 2px solid #1dd1a1;
+  padding: 8px 20px;
+  border-radius: 20px;
+}
+
+.btn-active {
+  background-color: #fff;
+  color: #000;
+  border: 2px solid #1dd1a1;
+}
+
+h2 {
+  font-size: 300%;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+h2:after {
+  content: " ";
+  width: 100px;
+  height: 3px;
+  background-color:#1dd1a1;
+  display: block;
+  margin: 18px auto;
+}
+
+h5 {
+  font-size: 90%;
+  font-weight: 100;
+  letter-spacing: 1.3px;
+  text-align: center;
+  line-height: 2;
+  padding-bottom: 50px;
+}
+
+/*<-------HEADER STYLES------->*/
+
+.hero {
+  background: url('img/hero-area.jpg') fixed;
+  width: auto;
+  height: 85vh;
+  background-size: cover;
+  background-position: center;
+}
+
+
+.navbar {
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  transition .5s
+}
+
+
+.navigation {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  padding: 0 10%;
+}
+
+.logo,
+.main-nav {
+  flex: 1;
+}
+
+
+.logo {
+  font-family: 'roboto';
+  color: #fff;
+  font-size: 200%;
+  text-decoration: none;
+}
+
+
+
+.logo span {
+  font-style: italic;
+  font-family: 'literata';
+  color: #1dd1a1;
+}
+
+
+/*------- TOGGLE BUTTON STYLE ----------*/
+
+.toggle_button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  display: none;
+}
+
+
+.toggle_button:focus {
+  outline: none;
+}
+.toggle_button i {
+  font-size: 120%;
+  color: #ffffff;
+  padding: 5px 8px;
+}
+
+/*------ ON SCROLL NAVBAR STYLE -------*/
+
+.nav-scroll-style {
+  background-color: #f0f0f0;
+  border-bottom: 2px solid #878787;
+}
+
+.nav-scroll-style .nav-link {
+  color: #303030;
+}
+
+.nav-scroll-style .logo {
+  color: #303030;
+}
+
+
+
+/*.main-nav {*/
+/*  padding-top: 15px;*/
+/*}*/
+
+
+.main-nav .btn-full {
+  padding: 5px 25px;
+}
+
+.main-nav .btn:hover {
+  color: #fff;
+}
+.flex-nav {
+  list-style: none;
+  display: inline-flex;
+}
+
+.nav-item {
+  padding: 0 8px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #fff;
+  font-family: 'roboto';
+  font-size: 105%;
+  font-weight: 100;
+}
+
+.nav-link:hover {
+  color: #1dd1a1;
+  transition: .2s;
+}
+
+.content {
+  padding-top: 11%;
+  text-align: center;
+}
+
+.content h1 {
+  color: #fff;
+  font-size: 300%;
+  font-weight: 400;
+  padding-bottom: 30px;
+}
+
+.content h5 {
+  color: #fff;
+  font-size: 100%;
+  font-family: 'roboto';
+  font-weight: 100;
+  letter-spacing: 1px;
+  padding-bottom: 60px;
+}
+
+
+/*<-------OUR SERVICES SECTION------->*/
+i {
+  
+  
+  
+}
+
+
+.icon-wrap {
+  color: #1dd1a1;
+  font-size: 25px;
+  text-align: center;
+  border: 1px solid #d1ccc0;
+  border-radius: 50%;
+  width: 65px;
+  height: 65px;
+  margin: 0 auto;
+  padding-top: 17px;
+  transition: .5s;
+}
+
+.icon-wrap:hover {
+  background-color: #1dd1a1;
+  border: 1px solid #1dd1a1;
+  color: #fff;
+  transition: .5s;
+}
+
+.grid-3-item {
+  padding: 0 10px;
+}
+
+.grid-3-item h3{
+  text-align: center;
+  padding-top: 35px;
+  font-size: 170%;
+}
+
+.grid-3-item p {
+  padding-top: 30px;
+  text-align: center;
+  line-height: 2;
+}
+
+
+
+/*<-------FEATURES SECTION------->*/
+
+
+.features {
+  background: url('img/bg1.jpg') no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+  position: relative;
+}
+
+.features h3 {
+  color: #1dd1a1;
+  padding-bottom: 10px;
+}
+
+.features h2,
+.features h5 {
+  color: #fff;
+}
+
+.grid-container-2-col-mini {
+  width: 70%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid-2-col-item {
+  display: flex;
+  padding: 0 0 30px 30px;
+}
+
+.grid-felx-wrapper {
+  flex: 1;
+  
+}
+.content-wrapper {
+  flex: 2;
+  margin-left: 30px;
+  color: #fff;
+}
+
+.icon-wrap-2 {
+  color: #1dd1a1;
+  border: 1px solid #1dd1a1;
+  border-radius: 50%;
+  padding-top: 18px;
+  padding-left: 18px;
+  width: 65px;
+  height: 65px;
+  font-size: 25px;
+  transition: .5s;
+}
+
+
+.icon-wrap-2:hover {
+  background-color: #1dd1a1;
+  color: #fff;
+  transition: .2s;
+}
+
+.thumb-reaction {
+  position: absolute;
+  bottom: 0;
+  right: 10%;
+}
+
+
+/*<--------OUR PORTFOLIO-------->*/
+
+.flex-btn {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.flex-btn .btn {
+  margin: 0 5px;
+  text-transform: uppercase;
+}
+
+
+.flex-gallery {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 15px;
+  margin-top: 30px;
+}
+
+img {
+  width: 100%;
+}
+
+
+
+/*<-------INTRO VIDEO STYLES------->*/
+
+
+.intro-video {
+  background-color: #1dd1a1;
+}
+
+
+.intro-video h3 {
+  font-size: 200%;
+  color: #fff;
+  text-align: center;
+  padding-bottom: 30px;
+  text-transform: uppercase;
+}
+
+.intro-video p {
+  font-size: 90%;
+  color: #fff;
+  text-align: center;
+  padding: 0 160px;
+  line-height: 2;
+  letter-spacing: 1px;
+  padding-bottom: 30px;
+}
+
+.icon-wrapper-3 {
+  border: 2px solid #fff;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  margin: 0 auto;
+}
+
+.fa-film {
+  font-size: 30px;
+  padding: 17px;
+  color: #fff;
+}
+
+
+
+/*<-------PRICING STYLES------->*/
+
+.price-section #for-info {
+  text-align: center;
+  letter-spacing: 1.3px;
+  line-height: 2;
+  font-weight: 100;
+  font-size: 85%;
+}
+
+.grid-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid #f5f6fa;
+  border-radius: 5px;
+  margin: 40px 5px 0 5px;
+}
+
+
+.grid-card:hover {
+  box-shadow: 1px 2px 3px 3px #dcdde1;
+  transition: .3s;
+}
+
+
+.card-header {
+  background-color: #f5f6fa;
+  margin-bottom: 30px;
+}
+
+.card-title {
+  padding: 30px 0;
+  /*font-size: 300%;*/
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.price-section span {
+  font-size: 270%;
+  color: #1dd1a1;
+  margin: 0 120px;
+  padding-bottom: 30px;
+}
+
+
+.price-section p {
+  border-bottom: 1px solid #f5f6fa;
+  padding: 5px 0;
+  font-size: 85%;
+  letter-spacing: 1px;
+}
+
+
+.price-section p:first-child {
+  padding-top: 30px;
+}
+
+.btn-card-wrapper {
+  padding: 50px 0;
+  margin: 0 90px;
+}
+
+.price-section .btn {
+  text-transform: uppercase;
+  width: 100%;
+}
+#f5f6fa
+#f5f6fa
+
+ion-icon {
+  color: blue;
+  font-size: 40px;
+}
